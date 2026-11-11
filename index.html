@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapia Maria Silva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #0b4f6c;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #0b4f6c;
+        }
+
+        /* Secção Principal (Hero) */
+        .hero {
+            background: linear-gradient(rgba(11, 79, 108, 0.8), rgba(11, 79, 108, 0.8)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            background-color: #01baef;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0b4f6c;
+        }
+
+        /* Serviços */
+        .services {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #0b4f6c;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #0b4f6c;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            color: #0b4f6c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #0b4f6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">🌿 FISIOTERAPIA MARIA SILVA</div>
+        <nav>
+            <a href="#" class="active">Página Inicial</a>
+            <a href="#">Sobre Mim</a>
+            <a href="#">Serviços</a>
+            <a href="#">Marcações</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Secção Principal -->
+    <section class="hero">
+        <h1>Fisioterapia que cuida de si com dedicação</h1>
+        <p>Reabilitação personalizada para uma vida mais ativa, livre de dores e com total bem-estar.</p>
+        <a href="#" class="btn">Agendar Primeira Consulta</a>
+    </section>
+
+    <!-- Secção de Serviços -->
+    <section class="services">
+        <h2>Os Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Fisioterapia Músculo-Esquelética</h3>
+                <p>Fisioterapia especializada na recuperação de lesões articulares, musculares e coluna.</p>
+                <a href="#">Ler Mais &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Reabilitação Desportiva</h3>
+                <p>Recuperação focada em atletas para um retorno seguro e rápido à prática desportiva.</p>
+                <a href="#">Ler Mais &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Pilates Clínico e Bem-Estar</h3>
+                <p>Exercícios terapêuticos para melhoria da postura, flexibilidade e fortalecimento global.</p>
+                <a href="#">Ler Mais &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Copyright &copy; 2026 Fisioterapia Maria Silva. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
